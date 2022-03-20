@@ -9,7 +9,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ a:visited {
   width: 300px;
   height: 200px;
   border-radius: 28px;
-  box-shadow: 4px 4px 14px rgba(255, 255, 255, 0.25);
+  box-shadow: 4px 4px 14px rgba(30, 255, 0, 0.384);
 }
 
 .info {
@@ -79,6 +79,9 @@ a:visited {
   text-align: center;
 }
 
+.overlay {
+}
+
 .card {
   border-radius: 20px;
   padding: 15px 20px;
@@ -89,16 +92,31 @@ a:visited {
   margin-bottom: 20px;
 }
 
-.bg-yellow {
-  background: #fff9dc;
+.bg-one {
+  opacity: 0.7;
+  background: url("../img/bg/gradient-one.jpg") center center/cover no-repeat;
 }
 
-.bg-red {
-  background: #ffe5e5;
+.bg-two {
+  opacity: 0.7;
+  background: url("../img/bg/gradient-two.jpg") center center/cover no-repeat;
 }
 
-.bg-green {
-  background: #e5ffe7;
+.bg-three {
+  opacity: 0.7;
+  background: url("../img/bg/gradient-three.jpg") center center/cover no-repeat;
+}
+
+.bg-one:hover {
+  opacity: 1;
+}
+
+.bg-two:hover {
+  opacity: 1;
+}
+
+.bg-three:hover {
+  opacity: 1;
 }
 
 .btn {
@@ -108,13 +126,15 @@ a:visited {
   background: #111;
   padding: 15px 20px;
   color: #fff;
+  box-shadow: 0 0 30px rgba(132, 0, 255, 0.25);
   border: none;
   font-family: inherit;
   cursor: pointer;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  box-shadow: none;
+  opacity: 0.4;
 }
 
 .list {
@@ -122,7 +142,7 @@ a:visited {
 }
 
 .list li {
-  color: #86898f;
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -147,7 +167,7 @@ a:visited {
 
 .table td:nth-child(2),
 .table td:nth-child(3) {
-  color: #86898f;
+  color: #fff;
 }
 
 .form {
@@ -161,11 +181,13 @@ a:visited {
 }
 
 .form-title {
+  margin-top: 50px;
+  text-align: center;
   color: #fff;
 }
 
 .form-row {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   display: flex;
 }
 
