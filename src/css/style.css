@@ -71,6 +71,10 @@ a:visited {
     display: block;
     text-align: center;
   }
+
+  .info-text {
+    margin-left: 0;
+  }
 }
 
 .title {
